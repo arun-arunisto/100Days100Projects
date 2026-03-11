@@ -37,7 +37,7 @@ This challenge covers several domains:
 | 🧮 Algorithms  | Data structures and problem solving                 |
 | 🎮 Games       | Logic-based and interactive projects                |
 | 🌐 Web Systems | APIs, servers, and backend services                 |
-| ⚙ Systems      | Databases, distributed systems, and low-level tools |
+| ⚙ Systems     | Databases, distributed systems, and low-level tools |
 
 ---
 
@@ -61,6 +61,7 @@ This challenge covers several domains:
 │   └── gifs
 │
 └── scripts
+    └── update_progress.py
 ```
 
 Each project contains:
@@ -80,7 +81,7 @@ Each project contains:
 ### Overall Completion
 
 ```
-[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
+[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%
 ```
 
 Projects Completed: **0 / 100**
@@ -96,7 +97,6 @@ progress.md
 # ⭐ Featured Projects (Planned)
 
 Some advanced projects are planned for this challenge:
-
 
 • Mini Git (Version Control System)
 
@@ -122,11 +122,11 @@ These projects focus on **system design and architecture**.
 
 | Day | Project               | Category   | Status |
 | --- | --------------------- | ---------- | ------ |
-| 1   | File Organizer CLI    | CLI Tools  | ⏳      |
-| 2   | Duplicate File Finder | CLI Tools  | ⏳      |
-| 3   | Log Analyzer          | CLI Tools  | ⏳      |
-| 4   | Sudoku Solver         | Algorithms | ⏳      |
-| 5   | Snake Game            | Games      | ⏳      |
+| 1   | File Organizer CLI    | CLI Tools  | ⏳     |
+| 2   | Duplicate File Finder | CLI Tools  | ⏳     |
+| 3   | Log Analyzer          | CLI Tools  | ⏳     |
+| 4   | Sudoku Solver         | Algorithms | ⏳     |
+| 5   | Snake Game            | Games      | ⏳     |
 
 Updated continuously during the challenge.
 
@@ -135,7 +135,6 @@ Updated continuously during the challenge.
 # 📚 Skills Developed
 
 Working through these projects will involve:
-
 
 • file systems
 
