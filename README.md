@@ -16,8 +16,11 @@ This repository documents the journey of building tools, systems, and applicatio
 The goal of this challenge is to:
 
 • Build **100 meaningful projects**
+
 • Improve **problem-solving ability**
+
 • Explore **different areas of software engineering**
+
 • Practice **consistent daily development**
 
 Learning happens fastest by **building real systems**.
@@ -63,8 +66,11 @@ This challenge covers several domains:
 Each project contains:
 
 • source code
+
 • documentation
+
 • example usage
+
 • demos when applicable
 
 ---
@@ -89,15 +95,23 @@ progress.md
 
 # ⭐ Featured Projects (Planned)
 
-Some advanced projects planned in this challenge:
+Some advanced projects are planned for this challenge:
+
 
 • Mini Git (Version Control System)
+
 • Redis Clone
+
 • Search Engine
+
 • BitTorrent Client
+
 • Distributed Key Value Store
+
 • Mini Database Engine
+
 • Docker-like Container Runtime
+
 • Multiplayer Game Server
 
 These projects focus on **system design and architecture**.
@@ -122,12 +136,19 @@ Updated continuously during the challenge.
 
 Working through these projects will involve:
 
+
 • file systems
+
 • algorithms and data structures
+
 • networking
+
 • distributed systems
+
 • backend development
+
 • system design
+
 • performance optimization
 
 The objective is **practical engineering experience**.
