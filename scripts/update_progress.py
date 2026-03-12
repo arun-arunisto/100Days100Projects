@@ -2,50 +2,43 @@ import os
 import re
 
 PROJECT_DIR = "projects"
-README_FILE = "README.md"
+PROGRESS_FILE = "progress.md"
 
-def count_projects():
-    total = 0
+
+def get_completed_projects():
+    completed = set()
 
     for root, dirs, files in os.walk(PROJECT_DIR):
         for d in dirs:
-            if d[:3].isdigit():
-                total += 1
+            if re.match(r"\d{3}-", d):
+                number = int(d[:3])
+                completed.add(number)
 
-    return total
-
-
-def progress_bar(percent):
-    total_blocks = 40
-    filled = int(percent / 100 * total_blocks)
-
-    return "[" + "█" * filled + "░" * (total_blocks - filled) + "]"
+    return completed
 
 
-def update_readme():
-    completed = count_projects()
-    percent = int((completed / 100) * 100)
+def update_progress():
+    completed_projects = get_completed_projects()
 
-    bar = progress_bar(percent)
+    with open(PROGRESS_FILE, "r") as f:
+        lines = f.readlines()
 
-    with open(README_FILE, "r") as f:
-        content = f.read()
+    new_lines = []
 
-    content = re.sub(
-        r"Projects Completed: \d+ / 100",
-        f"Projects Completed: {completed} / 100",
-        content
-    )
+    for line in lines:
+        match = re.match(r"\|\s*(\d+)\s*\|", line)
 
-    content = re.sub(
-        r"\[[█░]+\] \d+%",
-        f"{bar} {percent}%",
-        content
-    )
+        if match:
+            day = int(match.group(1))
 
-    with open(README_FILE, "w") as f:
-        f.write(content)
+            if day in completed_projects:
+                line = re.sub(r"⏳|🚧", "✅", line)
+
+        new_lines.append(line)
+
+    with open(PROGRESS_FILE, "w") as f:
+        f.writelines(new_lines)
 
 
 if __name__ == "__main__":
-    update_readme()
+    update_progress()
