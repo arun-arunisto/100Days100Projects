@@ -1,4 +1,5 @@
 import os
+import re
 
 PROJECT_DIR = "projects"
 README_FILE = "README.md"
@@ -30,14 +31,16 @@ def update_readme():
     with open(README_FILE, "r") as f:
         content = f.read()
 
-    content = content.replace(
-        "Projects Completed: 0 / 100",
-        f"Projects Completed: {completed} / 100"
+    content = re.sub(
+        r"Projects Completed: \d+ / 100",
+        f"Projects Completed: {completed} / 100",
+        content
     )
 
-    content = content.replace(
-        "[░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░] 0%",
-        f"{bar} {percent}%"
+    content = re.sub(
+        r"\[[█░]+\] \d+%",
+        f"{bar} {percent}%",
+        content
     )
 
     with open(README_FILE, "w") as f:
