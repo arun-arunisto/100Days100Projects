@@ -15,7 +15,7 @@ Status legend:
 | Day | Project                    | Category  | Status |
 | --- | -------------------------- | --------- | ------ |
 | 1   | File Organizer CLI         | CLI Tools | ✅     |
-| 2   | Duplicate File Finder      | CLI Tools | ⏳     |
+| 2   | Duplicate File Finder      | CLI Tools | ✅     |
 | 3   | Log Analyzer               | CLI Tools | ⏳     |
 | 4   | CSV Analytics Tool         | CLI Tools | ⏳     |
 | 5   | Folder Sync Tool           | CLI Tools | ⏳     |
